@@ -9,6 +9,7 @@ namespace EmployeeAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Produces("application/json")]
     public class EmployeeController : ControllerBase
     {
         private static List<Employee> _database = new List<Employee> 
