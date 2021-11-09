@@ -8,7 +8,8 @@ resource EmployeeAPI 'Microsoft.ApiManagement/service/apis@2021-04-01-preview' =
     format: 'openapi+json'
     value: loadTextContent('employee-swagger.json')
     path: 'employee'
-    subscriptionRequired: true    
+    subscriptionRequired: true
+    serviceUrl: 'https://trojan-api-backend.azurewebsites.net/Employee'
   }
 }
 
